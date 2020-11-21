@@ -1,0 +1,370 @@
+*, a{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* HEADER */
+/* Header_toolbar */
+header{
+    background-color: rgb(231, 228, 228);
+}
+.header_toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.1em;
+    text-decoration: none;
+    width: 100%;  
+    background-color: #283445;
+    padding: 5px;
+}
+
+/* Logo */
+.header_logo a{
+    
+    padding: 5.8px 10px;
+    margin: 0 0 0 30px;
+    transition: all 0.6s;
+}
+
+
+.header_logo img{
+    height: 15px;
+}
+
+.header_logo a:hover{
+    background-color:  #ce111a;
+    transition: all 0.6s;
+}
+
+/* Navigation */
+.header_nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 10px 20px;   
+}
+
+.header_nav ul{
+    padding: 0;
+}
+
+.header_nav li a{
+    padding: 5.8px 10px;
+    margin: 0 15px;   
+    transition: all 0.6s;
+}
+
+.header_nav  li a:hover{
+    background-color: #ce111a;
+    color: white;
+    transition: all 0.6s;
+}
+
+.header_toolbar a{
+    color: white;
+    font-size: 1.3em;
+    transition: all 0.6s;
+}
+
+.header_toolbar a:hover{
+    color: white;
+    transition: all 0.6s;
+}
+
+/* header_slogan */
+.header_slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 240px;   
+}
+
+.header_slogan h1{
+    font-size: 2.3em;
+    color: #db131d;
+}
+
+.header_slogan p{
+    font-size: 1.4em;
+    font-family: monospace;
+    color: #283445;
+    animation: slogan 3s;
+}
+
+/* ACCUEIL */
+.main_accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+}
+
+.page_accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+    width: 75%;
+    background-color: white;
+}
+
+/* Titre (article) */
+.titre h1{
+    font-size: 2.6em;
+    color: white;
+    color: black;
+    padding: 30px 0;
+}
+
+.titre h1 span{
+    color: #db131d;
+}
+
+/* Section contenant les articles */
+.les_articles{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+/* Article */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 470px;
+    height: 430px;
+    box-shadow: 0 0 10px rgb(235, 234, 234);
+    margin: 30px 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+article:hover{
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 15px rgb(235, 233, 233);
+}
+
+.conteneur_image{
+    width: 470px;
+    height: 300px;
+    clip-path: inset(0);
+}
+
+.conteneur_image img{
+    width: 470px;
+    height: 300px;  
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+
+.conteneur_image img:hover{
+    height: 300px;
+    width: 470px;
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+.text h2{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: rgb(27, 27, 27);
+    padding: 0 10px;
+}
+
+.text p{
+    color: rgb(31, 30, 30);
+    padding: 0 10px;
+}
+
+/*INSCRIPTION */
+.main_inscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    text-align: center;
+    background-color:  #283445;
+}
+
+/* formulaire d'inscription */
+.formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 350px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    animation: encadre 3s;
+}
+
+.formulaire h1{
+    color: #283445;
+    padding: 0 10px;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+
+/* LABEL ET INPUT (pour toutes les pages) */
+label{
+    font-size: 1.2em;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 250px;
+    height: 25px;
+}
+/* BOUTON SUBMIT (pour toutes les pages) */
+.bouton input{
+    color: white;
+    background-color:  #334258;
+    transition: background-color 0.6s;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.bouton input:hover{
+    background-color: #283445;
+    transition: background-color 0.6s;
+}
+
+/* ERREUR  */
+.erreur p{
+    color: red;
+    font-size: 1.1em;    
+}
+
+.erreur h2{
+    color: #1b771f;
+    margin: 20px;
+}
+
+
+/*CONNEXION */
+.main_connexion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    text-align: center;
+    background-color:  #283445;
+}
+
+/* Formulaire connexion */
+.connexion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 320px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    animation: encadre 3s;
+}
+
+.connexion h1{
+    color:  #283445;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+/*PROFIL */
+.main_profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 570px;
+    text-align: center;
+    background-color:  #283445;
+}
+
+/* Formulaire profil */
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px 0 30px 0; 
+    animation: encadre 3s;
+}
+
+.profil h1{
+    color:  #283445;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 228, 228);
+}
+
+/* Logo */
+.footer_logo a{
+    font-size: 1.2em;
+    background-color: #ce111a;
+    opacity: 0.8;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 30px;
+    transition: all 0.6s;
+}
+
+.footer_logo img{
+    height: 15px;
+}
+
+.footer_logo a:hover{
+    background-color: #ce111a;
+    opacity: 1;
+}
+
+/* Adresse */
+address{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(20, 20, 20);
+}
+
+/* Réseaux sociaux */
+.social{
+    padding-right: 30px;
+}
+
+.social ul{
+    display: flex;
+}
+
+.social img{
+    height: 40px;
+    margin: 10px;
+}
+
+.social img:hover{
+    transform: scale(1.08);
+}
+
