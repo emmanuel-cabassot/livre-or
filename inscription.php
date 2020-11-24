@@ -18,19 +18,33 @@ else
     // Autre contrôle pour vérifier si la variable $_POST['Bouton'] est bien définie et que la confirmation du mot de pass est ok
     if(isset($_POST['envoyer']) AND $_POST['password'] === $_POST['confirm_password']) 
     { 
-        $login=$_POST['login'];
-        $password=$_POST['password'];
+        $login = htmlspecialchars($_POST['login']);
+        $password = htmlspecialchars($_POST['password']);
+        $select = "SELECT `login`FROM `utilisateurs` WHERE login = '$login'";
+        $request = mysqli_query($db, $select);
+        $rows = mysqli_num_rows($request);
 
-        // Requête d'insertion
-        $nouvelle_inscription="INSERT INTO utilisateurs (login, password) VALUES ('$login', '$password')";
-        // Exécution de la reqête
-        $requete_enregistree = mysqli_query($db, $nouvelle_inscription) or die('Erreur SQL !'.$nouvelle_inscription.'<br>'.mysqli_error($db));
-        if (isset($requete_enregistree)) {
-            $messageok = "<h1>Votre profil a bien été crée, vous pouvez vous connecter.</h1>";
+        if ($rows == 1) 
+        {
+            $message = $login.' existe déjà.';
         }
-        else{
-            $erreur_modification = 'Erreur sur l\'enregistrement de votre profil.';
+        else 
+        {
+                // Requête d'insertion
+            $nouvelle_inscription="INSERT INTO utilisateurs (login, password) VALUES ('$login', '$password')";
+            // Exécution de la reqête
+            $requete_enregistree = mysqli_query($db, $nouvelle_inscription) or die('Erreur SQL !'.$nouvelle_inscription.'<br>'.mysqli_error($db));
+            if (isset($requete_enregistree)) 
+            {
+                $messageok = "<h1>Votre profil a bien été crée, vous pouvez vous connecter.</h1>";
+            }
+            else
+            {
+                $erreur_modification = 'Erreur sur l\'enregistrement de votre profil.';
+            }
         }
+
+        
     }
 }
 ?>

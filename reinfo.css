@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
 }
-/* HEADER */
+                /* HEADER */
 /* Header_toolbar */
 header{
     background-color: rgb(231, 228, 228);
@@ -96,7 +96,7 @@ header{
     animation: slogan 3s;
 }
 
-/* ACCUEIL */
+                /* ACCUEIL */
 .main_accueil{
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@ article:hover{
     padding: 0 10px;
 }
 
-/*INSCRIPTION */
+                /*INSCRIPTION */
 .main_inscription{
     display: flex;
     justify-content: center;
@@ -215,7 +215,7 @@ article:hover{
 }
 
 
-/* LABEL ET INPUT (pour toutes les pages) */
+                /* LABEL ET INPUT (pour toutes les pages) */
 label{
     font-size: 1.2em;
 }
@@ -225,7 +225,7 @@ input{
     width: 250px;
     height: 25px;
 }
-/* BOUTON SUBMIT (pour toutes les pages) */
+                /* BOUTON SUBMIT (pour toutes les pages) */
 .bouton input{
     color: white;
     background-color:  #334258;
@@ -239,7 +239,7 @@ input{
     transition: background-color 0.6s;
 }
 
-/* ERREUR  */
+                /* ERREUR  */
 .erreur p{
     color: red;
     font-size: 1.1em;    
@@ -251,7 +251,7 @@ input{
 }
 
 
-/*CONNEXION */
+                /*CONNEXION */
 .main_connexion{
     display: flex;
     justify-content: center;
@@ -282,7 +282,7 @@ input{
     margin-bottom: 20px;
 }
 
-/*PROFIL */
+                /*PROFIL */
 .main_profil{
     display: flex;
     justify-content: center;
@@ -313,8 +313,112 @@ input{
     margin-bottom: 20px;
 }
 
+                /* LIVRE D'OR */
+.main_livre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #283445;
+}
 
-/* FOOTER */
+.page_livre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    background-color: white;
+}
+
+.page_livre h1{
+    margin: 30px 0 20px 0;
+    font-size: 2.5em;
+    font-family: monospace;
+    color: #334258;
+}
+
+/* Lien vers Ajouter un commentaire */
+.ajouter a{
+    padding: 8px 16px;
+    font-size: 1.2em;
+    background-color: #36465c;
+    color: white;
+    transition: background-color 1s;
+}
+
+.ajouter a:hover{
+    background-color: #1f2936;
+    transition: background-color 1s;
+}
+
+/* Commentaires */
+.commentaires{
+    margin: 30px;
+    width: 500px;
+    text-align: center;
+}
+
+.commentaires h2{
+    font-size: 1.2em;
+    color: rgb(34, 34, 34);
+}
+
+.commentaires span{
+    color: #3c506b;
+}
+
+.commentaires p{
+    font-size: 1.2em;
+}
+
+                /* AJOUTER UN COMMENTAIRE */
+.main_commentaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #334258;
+}
+
+.page_commentaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    background-color: white;
+}
+
+.page_commentaire submit{
+    margin: 10px 0 50px 0;
+}
+
+.page_commentaire h1{
+    color:  #334258;
+    margin: 30px 0 20px 0;
+    font-size: 2.3em;
+    font-family: monospace;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+
+.submit input{
+    background-color: #435672;
+    color: white;
+    font-size: 1.1em;
+    width: 458.5px;
+    transition: background-color 1s;
+}
+
+.submit input:hover{
+    background-color: #24303f;
+    transition: background-color 1s;
+}
+
+                /* FOOTER */
 footer{
     display: flex;
     width: 100%;

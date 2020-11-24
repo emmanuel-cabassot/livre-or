@@ -7,7 +7,7 @@
     <section class = header_nav>
     <ul>
         <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php">Livre d'or</a></li>
+        <li><a href="livre-or.php">Livre d'or</a></li>
         <?php
         /* Profil ou Inscription */
         if (isset($_SESSION['login'])) 
@@ -44,7 +44,7 @@
     if (isset($_SESSION['login']))
     {
         echo '<h1>Réinformez-vous</h1>
-        <p>Bonjour '.$_SESSION['login'].': Vous faites travailler votre sens critique</p>';
+        <p>Bonjour '.$_SESSION['login'].': Vous aiguisez votre sens critique</p>';
     }
 ?>
 </h1>
