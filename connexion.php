@@ -34,8 +34,6 @@ if (isset($_POST['login']) AND isset($_POST['envoyer']))
     }  
 }
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">

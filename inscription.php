@@ -17,9 +17,12 @@ else
     }
     // Autre contrôle pour vérifier si la variable $_POST['Bouton'] est bien définie et que la confirmation du mot de pass est ok
     if(isset($_POST['envoyer']) AND $_POST['password'] === $_POST['confirm_password']) 
-    { 
+    {   
+        //enregistre les variables de login et password
         $login = htmlspecialchars($_POST['login']);
         $password = htmlspecialchars($_POST['password']);
+
+        //Vérifie que le login n'est pas déjà pris et est inconnu dans la BDD
         $select = "SELECT `login`FROM `utilisateurs` WHERE login = '$login'";
         $request = mysqli_query($db, $select);
         $rows = mysqli_num_rows($request);
