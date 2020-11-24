@@ -52,4 +52,5 @@ if (isset($_POST['valider']) AND isset($_POST['commentaire'])) {
     </footer>
     
 </body>
+
 </html>

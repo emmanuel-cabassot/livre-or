@@ -82,4 +82,5 @@ if (isset($_POST['login']) AND isset($_POST['envoyer']))
     <?php require('footer.php') ?>
     </footer>
 </body>
+
 </html>

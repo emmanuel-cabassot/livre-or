@@ -46,6 +46,7 @@
         echo '<h1>Réinformez-vous</h1>
         <p>Bonjour '.$_SESSION['login'].': Vous aiguisez votre sens critique</p>';
     }
+    
 ?>
 </h1>
     </section>

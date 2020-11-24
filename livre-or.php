@@ -50,4 +50,5 @@ for ($occu_commentaires=0; isset($commentaires[$occu_commentaires]) ; $occu_comm
         <?php require('footer.php') ?>
     </footer>
 </body>
+
 </html>
